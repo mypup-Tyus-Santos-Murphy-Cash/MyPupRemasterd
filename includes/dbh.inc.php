@@ -3,7 +3,7 @@
 $serverName = "localhost";
 $dBUsername = "root";
 $dBPassword = "";
-$dBName = "loginsystem_db";
+$dBName = "mypupRemasterd_db";
 
 $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
 
