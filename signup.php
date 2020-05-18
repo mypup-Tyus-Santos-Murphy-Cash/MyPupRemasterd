@@ -67,6 +67,11 @@ require "header.php";
                         <input type="text" name="zipCode" placeholder="zip code"/>
                     </div>
 
+                    <div class="col-xl-12">
+                        <label for="image">Image</label>
+                        <input type="text" name="image" placeholder="image"/>
+                    </div>
+
 
 <!--                    <div class="col-xl-12">-->
 <!--                        <button class="button photo-upload upload-photo" type="button" id="picker">Profile Image-->
