@@ -1,8 +1,9 @@
-<html lang="en">
 
+<?php
+require "header.php";
+?>
 
-
-<body class="sign">
+<main class="sign">
 <div class="main-container">
 
     <header class="container my-5"></header>
@@ -15,7 +16,7 @@
             <div class="card-body sign-up-form">
                 <h5 class="card-title user-Form-Text">User Sign Up</h5>
                 <hr>
-                <form action="includes/signup.inc.php"method="POST">
+                <form action="includes/signup.inc.php" method="POST">
                     <div class="col-xl-12">
                         <label for="userRole">Select User Role</label>
 
@@ -58,23 +59,23 @@
 
                     <div class="col-xl-12">
                         <label for="state">State</label>
-                        <input th:field="*{state}"/>
+                        <input type="text" name="state" placeholder="state"/>
                     </div>
 
                     <div class="col-xl-12">
                         <label for="zipcode">Zip Code</label>
-                        <input th:field="*{zipcode}"/>
+                        <input type="text" name="zipCode" placeholder="zip code"/>
                     </div>
 
 
-                    <div class="col-xl-12">
-                        <button class="button photo-upload upload-photo" type="button" id="picker">Profile Image
-                        </button>
-                        <input class="move-right" name="fileupload" id="fileupload" th:field="*{profileImage}">
-                    </div>
+<!--                    <div class="col-xl-12">-->
+<!--                        <button class="button photo-upload upload-photo" type="button" id="picker">Profile Image-->
+<!--                        </button>-->
+<!--                        <input class="move-right" name="fileupload" id="fileupload">-->
+<!--                    </div>-->
 
                     <div class="col-xl-12">
-                        <input class="loginSign-btn sign-create-btn" value="Sign me up!" type="submit"/>
+                        <input class="loginSign-btn sign-create-btn" name="signup-submit" value="Sign me up!" type="submit"/>
                     </div>
                 </form>
 
@@ -84,5 +85,8 @@
     </div>
 
 </div>
-</body>
-</html>
+</main>
+
+<?php
+require "footer.php";
+?>
