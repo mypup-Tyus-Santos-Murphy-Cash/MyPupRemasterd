@@ -1,9 +1,14 @@
+<?php
+require "includes/header.php";
+?>
 
 
+<main>
 
+
+</main>
 
 
 <?php
-echo "hello";
-echo "Were gonna redo MyPup using PHP and react"
+require "includes/footer.php";
 ?>
