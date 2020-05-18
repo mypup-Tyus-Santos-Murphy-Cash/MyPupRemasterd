@@ -12,7 +12,7 @@ if(isset($_POST['login-submit'])) {
     }
 
     else {
-        $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
+        $sql = "SELECT * FROM users WHERE username=? OR email=?;";
         $stmt = mysqli_stmt_init($conn);
 
         if(!mysqli_stmt_prepare($stmt, $sql)) {
