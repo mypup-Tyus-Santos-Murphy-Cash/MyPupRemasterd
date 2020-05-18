@@ -1,6 +1,9 @@
+
 <?php
 session_start();
 ?>
+
+
 
 <!doctype html>
 <html lang="en">
@@ -11,6 +14,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -57,3 +61,8 @@ session_start();
 
     </nav>
 </header>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+

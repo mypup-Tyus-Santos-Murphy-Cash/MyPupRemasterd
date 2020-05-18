@@ -1,3 +1,4 @@
+
 <?php
 
 require "header.php";
@@ -18,6 +19,21 @@ require "header.php";
 
 <?php
 
+require "footer.php";
+
+=======
+<?php
+require "header.php";
+?>
+
+
+<main>
+
+
+</main>
+
+
+<?php
 require "footer.php";
 
 ?>
