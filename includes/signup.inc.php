@@ -8,8 +8,12 @@ if (isset($_POST['signup-submit'])) {
     $email = $_POST['mail'];
     $password = $_POST['pwd'];
     $passwordRepeat = $_POST['pwd-repeat'];
+    $phoneNumber = $_POST['phoneNumber'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zipCode = $_POST['zipCode'];
 
-    if(empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
+    if(empty($username) || empty($email) || empty($password) || empty($passwordRepeat) || empty($phoneNumber) || empty($city) || empty($state) || empty($zipCode)) {
         header("Location: ../signup.php?error=emptyFields&uid=".$username."&mail=".$email);
         exit();
     }
@@ -52,7 +56,7 @@ if (isset($_POST['signup-submit'])) {
             }
 
             else {
-                $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+                $sql = "INSERT INTO users (city, email, password, phone_number, profile_image, state, user_role, username, zipcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
                 mysqli_stmt_init($conn);
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: ../signup.php?error=sqlerror");
@@ -63,7 +67,7 @@ if (isset($_POST['signup-submit'])) {
 
                     $hashpwd = password_hash($password, PASSWORD_DEFAULT);
 
-                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashpwd);
+                    mysqli_stmt_bind_param($stmt, "sssssssss", $username, $email, $hashpwd, $phoneNumber, $city, $state, $zipCode);
                     mysqli_stmt_execute($stmt);
                     header("Location: ../signup.php?signup=success");
                     exit();
