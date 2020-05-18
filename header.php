@@ -35,13 +35,13 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
-            <?php
-            if (isset($_SESSION['userId'])) {
-                echo '<form action="includes/logout.inc.php" method="post">
+                <?php
+                if (isset($_SESSION['userId'])) {
+                    echo '<form action="includes/logout.inc.php" method="post">
             <button type="submit" name="logout-submit">Logout</button>
         </form>';
-            } else {
-                echo '<li class="nav-item">
+                } else {
+                    echo '<li class="nav-item">
             <form action="includes/login.inc.php" method="post">
                 <input type="text" name="mailuid" placeholder="username/email...">
                 <input type="password" name="pwd" placeholder="password...">
@@ -51,16 +51,15 @@ session_start();
         <li class="nav-item ml-3">
             <a href="signup.php">Signup!</a>
         </li>';
-            }
+                }
 
-            ?>
+                ?>
 
 
             </ul>
         </div>
 
     </nav>
-</header>
 
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
 </head>
