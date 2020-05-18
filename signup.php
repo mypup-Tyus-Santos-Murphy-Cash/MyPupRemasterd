@@ -20,11 +20,11 @@ require "header.php";
                     <div class="col-xl-12">
                         <label for="userRole">Select User Role</label>
 
-<!--                        <select>-->
-<!--                            <option value="breeder">Breeder</option>-->
-<!--                            <option value="buyer">Buyer</option>-->
-                            <!--                            <option value="admin">Admin</option>-->
-<!--                        </select>-->
+                        <select name="userRole">
+                            <option value="breeder">Breeder</option>
+                            <option value="buyer">Buyer</option>
+<!--                                                        <option value="admin">Admin</option>-->
+                        </select>
                     </div>
 
                     <div class="col-xl-12">
