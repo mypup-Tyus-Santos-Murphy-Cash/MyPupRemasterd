@@ -57,7 +57,7 @@ if (isset($_POST['signup-submit'])) {
             }
 
             else {
-                $sql = "INSERT INTO users (city, email, password, phone_number, profile_image, state, user_role, username, zipcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                $sql = "INSERT INTO users (user_role, username, password, email, phone_number, city, state, zipcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                 mysqli_stmt_init($conn);
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: ../signup.php?error=sqlerror");
