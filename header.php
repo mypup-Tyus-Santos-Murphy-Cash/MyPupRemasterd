@@ -1,6 +1,9 @@
+
 <?php
 session_start();
 ?>
+
+
 
 <!doctype html>
 <html lang="en">
@@ -11,6 +14,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -31,13 +35,13 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
-            <?php
-            if (isset($_SESSION['userId'])) {
-                echo '<form action="includes/logout.inc.php" method="post">
+                <?php
+                if (isset($_SESSION['userId'])) {
+                    echo '<form action="includes/logout.inc.php" method="post">
             <button type="submit" name="logout-submit">Logout</button>
         </form>';
-            } else {
-                echo '<li class="nav-item">
+                } else {
+                    echo '<li class="nav-item">
             <form action="includes/login.inc.php" method="post">
                 <input type="text" name="mailuid" placeholder="username/email...">
                 <input type="password" name="pwd" placeholder="password...">
@@ -47,13 +51,17 @@ session_start();
         <li class="nav-item ml-3">
             <a href="signup.php">Signup!</a>
         </li>';
-            }
+                }
 
-            ?>
+                ?>
 
 
             </ul>
         </div>
 
     </nav>
-</header>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
