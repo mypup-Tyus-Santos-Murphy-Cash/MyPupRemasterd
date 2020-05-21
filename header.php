@@ -50,8 +50,6 @@ session_start();
         </li>';
                 }
                 ?>
-
-
             </ul>
         </div>
 
