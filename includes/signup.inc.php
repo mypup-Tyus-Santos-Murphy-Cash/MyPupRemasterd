@@ -58,7 +58,7 @@ if (isset($_POST['signup-submit'])) {
             }
 
             else {
-                $sql = "INSERT INTO users (city, email, password, phone_number, profile_image, state, user_role, username, zipcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                $sql = "INSERT INTO users (city, email, password, phone_number, state, user_role, username, zipcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                 mysqli_stmt_init($conn);
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: ../signup.php?error=sqlerror");
@@ -69,7 +69,7 @@ if (isset($_POST['signup-submit'])) {
 
                     $hashpwd = password_hash($password, PASSWORD_DEFAULT);
 
-                    mysqli_stmt_bind_param($stmt, "sssssssss", $city, $email, $hashpwd, $phoneNumber, $profileImage, $state, $userRole, $username, $zipCode);
+                    mysqli_stmt_bind_param($stmt, "ssssssss", $city, $email, $hashpwd, $phoneNumber, $state, $userRole, $username, $zipCode);
                     mysqli_stmt_execute($stmt);
                     header("Location: ../signup.php?signup=success");
                     exit();

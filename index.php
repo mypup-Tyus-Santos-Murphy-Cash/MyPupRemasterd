@@ -2,7 +2,6 @@
 require "header.php";
 ?>
 
-
 <main>
     <?php
     if (isset($_SESSION['userId'])) {
@@ -12,7 +11,6 @@ require "header.php";
     }
     ?>
 </main>
-
 
 <?php
 require "footer.php";
