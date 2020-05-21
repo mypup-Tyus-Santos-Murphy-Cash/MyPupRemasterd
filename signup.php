@@ -75,7 +75,7 @@ require "header.php";
 <!--                    </div>-->
 
                     <div class="col-xl-12">
-                        <button class="loginSign-btn sign-create-btn" name="signup-submit" value="Sign me up!" type="submit"></button>
+                        <button class="loginSign-btn sign-create-btn" name="signup-submit" type="submit">Sign me up!</button>
                     </div>
                 </form>
 
