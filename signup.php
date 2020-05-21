@@ -7,7 +7,7 @@ require "header.php";
 
 <main>
 <h1>Signup!</h1>
-    <form action="includes/signup.inc.php" method="post">
+    <form action="application/signup.inc.php" method="post">
         <input type="text" name="uid" placeholder="Username">
         <input type="text" name="mail" placeholder="Email">
         <input type="password" name="pwd" placeholder="Password">
@@ -40,7 +40,7 @@ require "header.php";
             <div class="card-body sign-up-form">
                 <h5 class="card-title user-Form-Text">User Sign Up</h5>
                 <hr>
-                <form action="includes/signup.inc.php" method="POST">
+                <form action="application/signup.inc.php" method="POST">
                     <div class="col-xl-12">
                         <label for="userRole">Select User Role</label>
 

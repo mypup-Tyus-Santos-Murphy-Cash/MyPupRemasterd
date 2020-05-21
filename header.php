@@ -37,12 +37,12 @@ session_start();
                 </li>
                 <?php
                 if (isset($_SESSION['userId'])) {
-                    echo '<form action="includes/logout.inc.php" method="post">
+                    echo '<form action="application/logout.inc.php" method="post">
             <button type="submit" name="logout-submit">Logout</button>
         </form>';
                 } else {
                     echo '<li class="nav-item">
-            <form action="includes/login.inc.php" method="post">
+            <form action="application/login.inc.php" method="post">
                 <input type="text" name="mailuid" placeholder="username/email...">
                 <input type="password" name="pwd" placeholder="password...">
                 <button type="submit" name="login-submit">Login</button>
