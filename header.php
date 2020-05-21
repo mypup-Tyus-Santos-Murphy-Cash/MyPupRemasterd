@@ -49,7 +49,6 @@ session_start();
             <a href="signup.php">Signup!</a>
         </li>';
                 }
-
                 ?>
 
 
