@@ -78,9 +78,9 @@ require "header.php";
 <!--                        <input class="move-right" name="fileupload" id="fileupload">-->
 <!--                    </div>-->
 
-                    <div class="col-xl-12">
-                        <button class="loginSign-btn sign-create-btn" name="signup-submit" type="submit">Sign me up!</button>
-                    </div>
+<!--                    <div class="col-xl-12">-->
+                        <button type="submit" name="signup-submit">Sign me up!</button>
+<!--                    </div>-->
                 </form>
 
             </div>
