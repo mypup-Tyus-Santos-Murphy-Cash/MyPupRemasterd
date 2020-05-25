@@ -79,7 +79,7 @@ require "header.php";
 <!--                    </div>-->
 
 <!--                    <div class="col-xl-12">-->
-                        <button  name="signup-submit">Sign me up!</button>
+                        <button type="submit" name="signup-submit">Sign me up!</button>
 <!--                    </div>-->
                 </form>
 
