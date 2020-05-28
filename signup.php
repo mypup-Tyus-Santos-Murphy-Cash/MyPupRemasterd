@@ -26,7 +26,7 @@ require "header.php";
                 <input type="text" name="city" placeholder="city"/>
                 <input type="text" name="state" placeholder="state"/>
                 <input type="text" name="zipcode" placeholder="zipcode"/>
-                    <select name="user_role">
+                    <select name="user-role">
                         <option value="breeder">Breeder</option>
                         <option value="buyer">Buyer</option>
                         <!--                            <option value="admin">Admin</option>-->

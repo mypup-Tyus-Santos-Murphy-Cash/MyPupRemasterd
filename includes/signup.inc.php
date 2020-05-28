@@ -12,10 +12,11 @@ if (isset($_POST['signup-submit'])) {
     $city = $_POST['city'];
     $state = $_POST['state'];
     $zipcode = $_POST['zipcode'];
+    $userRole = $_POST['user-role'];
+    $image = $_POST['image'];
 
 
-
-    if(empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
+    if(empty($username) || empty($email) || empty($password) || empty($passwordRepeat) || empty($phoneNumber) || empty($city) || empty($state) || empty($zipcode) || empty($userRole) || empty($image)) {
         header("Location: ../signup.php?error=emptyFields&uid=".$username."&mail=".$email);
         exit();
     }
