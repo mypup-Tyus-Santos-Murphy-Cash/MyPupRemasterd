@@ -24,12 +24,9 @@ require "header.php";
                 <input type="password" name="pwd-repeat" placeholder="Re-enter password"/>
                 <input type="text" name="phoneNumber" placeholder="phone number"/>
                 <input type="text" name="city" placeholder="city"/>
-
-                        <input th:field="*{state}"/>
-
-                        <input th:field="*{zipcode}"/>
-
-                    <button type="submit" name="signup-submit">Sign me up!</button>
+                <input type="text" name="state" placeholder="state"/>
+                <input type="text" name="zipcode" placeholder="zipcode"/>
+                <button type="submit" name="signup-submit">Sign me up!</button>
                 </form>
 
             </div>
