@@ -22,7 +22,7 @@ require "header.php";
                 <input type="text" name="mail" placeholder="Email"/>
                 <input type="password" name="pwd" placeholder="Password"/>
                 <input type="password" name="pwd-repeat" placeholder="Re-enter password"/>
-                <input type="text" name="phoneNumber" placeholder="phone number"/>
+                <input type="text" name="phone-number" placeholder="phone number"/>
                 <input type="text" name="city" placeholder="city"/>
                 <input type="text" name="state" placeholder="state"/>
                 <input type="text" name="zipcode" placeholder="zipcode"/>

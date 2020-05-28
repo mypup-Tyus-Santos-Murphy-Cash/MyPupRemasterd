@@ -8,7 +8,11 @@ if (isset($_POST['signup-submit'])) {
     $email = $_POST['mail'];
     $password = $_POST['pwd'];
     $passwordRepeat = $_POST['pwd-repeat'];
-    $phoneNumber = $_POST['phoneNumber'];
+    $phoneNumber = $_POST['phone-number'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zipcode = $_POST['zipcode'];
+
 
 
     if(empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
