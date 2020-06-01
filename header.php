@@ -2,12 +2,6 @@
 session_start();
 ?>
 
-<?php
-session_start();
-?>
-
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -62,6 +56,6 @@ session_start();
     </nav>
 
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
+</header>
+</body>
 
