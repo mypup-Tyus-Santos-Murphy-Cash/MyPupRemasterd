@@ -13,6 +13,7 @@ if(isset($_POST['login-submit'])) {
 
     else {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
     $stmt = mysqli_stmt_init($conn);
 
@@ -58,6 +59,9 @@ if(isset($_POST['login-submit'])) {
     }
 =======
         $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
+=======
+        $sql = "SELECT * FROM users WHERE username=? OR email=?;";
+>>>>>>> 58eb766aaaed4bdb016f82e5912c927f5002d45e
         $stmt = mysqli_stmt_init($conn);
 
         if(!mysqli_stmt_prepare($stmt, $sql)) {
@@ -71,7 +75,7 @@ if(isset($_POST['login-submit'])) {
             $result = mysqli_stmt_get_result($stmt);
 
             if($row = mysqli_fetch_assoc($result)) {
-                $pwdCheck = password_verify($password, $row['pwdUsers']);
+                $pwdCheck = password_verify($password, $row['password']);
                 if($pwdCheck == false) {
                     header("Location: ../index.php?error=wrongpwd");
                     exit();
@@ -79,8 +83,8 @@ if(isset($_POST['login-submit'])) {
 
                 else if($pwdCheck == true) {
                     session_start();
-                    $_SESSION['userId'] = $row['idUsers'];
-                    $_SESSION['userUid'] = $row['uidUsers'];
+                    $_SESSION['userId'] = $row['id'];
+                    $_SESSION['userUid'] = $row['username'];
                     header("Location: ../index.php?login=success");
                     exit();
                 }

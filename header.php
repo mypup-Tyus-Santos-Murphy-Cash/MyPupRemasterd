@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 
 <?php
 session_start();
@@ -52,10 +55,7 @@ session_start();
             <a href="signup.php">Signup!</a>
         </li>';
                 }
-
                 ?>
-
-
             </ul>
         </div>
 
