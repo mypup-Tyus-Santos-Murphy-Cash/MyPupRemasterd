@@ -4,7 +4,7 @@ $serverName = "localhost";
 $dBUsername = "root";
 $dBPassword = "";
 
-$dBName = "MypupRemasterd_db";
+$dBName = "mypupRemasterd_db";
 $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
 
 if (!$conn) {
